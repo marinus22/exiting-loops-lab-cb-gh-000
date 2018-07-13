@@ -21,10 +21,10 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  const x = findFn();
-  const t = null;
+  var x = findFn();
+  var t = null;
   for (var i = 0; i < array.length; i++) {
-    t = const array[i];
+    t = array[i];
     if (t == x) {
       break;
     }
