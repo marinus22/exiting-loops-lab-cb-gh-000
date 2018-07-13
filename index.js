@@ -22,12 +22,14 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
   var x = findFn();
-  var t = null;
   for (var i = 0; i < array.length; i++) {
     t = array[i];
     if (t == x) {
       break;
     }
+  }
+  if (i+1 == array.length) {
+    return null;
   }
 
 }
