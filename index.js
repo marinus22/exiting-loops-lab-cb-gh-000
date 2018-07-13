@@ -26,10 +26,10 @@ function findBy(array, findFn) {
     if (array[i] == findFn()) {
         return array[i];
         break;
+    } else if (i+1 == array.length) {
+        return null;
+    } else {
+      continue;
     }
   }
-  if (i == array.length - 1) {
-    return null;
-  }
-
 }
