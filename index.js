@@ -25,7 +25,7 @@ function findBy(array, findFn) {
   var t = 0;
   for (var i = 0; i < array.length; i++) {
     var p = array[i];
-    if (p == x) {
+    if (p === x) {
       break;
     }
   }
