@@ -29,7 +29,5 @@ function findBy(array, findFn) {
       break;
     }
   }
-  if (i+1 == array.length) {
-    return null;
-  }
+
 }
