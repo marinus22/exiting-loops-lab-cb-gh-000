@@ -24,11 +24,12 @@ function findBy(array, findFn) {
 
   for (var i = 0; i < array.length; i++) {
     if (array[i] == findFn) {
-        return array[i];
+      return findFn;
     } else if (i+1 == array.length) {
-        return `null`;
+        return null;
     } else {
       continue;
     }
   }
+
 }
