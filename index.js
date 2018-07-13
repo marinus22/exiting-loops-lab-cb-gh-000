@@ -24,13 +24,12 @@ function findBy(array, findFn) {
   var x = findFn();
   var t = 0;
   for (var i = 0; i < array.length; i++) {
-    if (array[i] == x) {
+    var p = array[i];
+    if (p == x) {
       break;
-    } else {
-      t++;
     }
   }
-  if (t == i) {
+  if (array.length -1 == i) {
     return null;
   }
 }
