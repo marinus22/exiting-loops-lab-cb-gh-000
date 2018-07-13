@@ -24,7 +24,7 @@ function findBy(array, findFn) {
   const x = findFn();
   var t = 0;
   for (var i = 0; i < array.length; i++) {
-    if (array[i] == x) {
+    if (const array[i] == x) {
       break;
     } else {
       t++;
