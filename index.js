@@ -21,17 +21,15 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  var t = null;
   for (var i = 0; i < array.length; i++) {
-    t = array[i];
-    if (t == findFn()) {
+    if (array[i] == findFn()) {
       break;
     }
   }
   if ((i+1) == array.length) {
     return null;
   } else {
-    return t;
+    return array[i];
   }
 
 }
